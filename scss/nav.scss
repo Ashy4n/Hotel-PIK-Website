@@ -1,3 +1,19 @@
+@mixin underline {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 5%;
+  top: 120%;
+  z-index: 1;
+  height: 3px;
+  width: 90%;
+  border-radius: 20px;
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-out;
+  background-color: $primary-color;
+}
+
 nav {
   font-size: 2rem;
   color: $primary-color;
@@ -32,34 +48,11 @@ nav {
       width: fit-content;
     }
     .selected::after {
-      content: "";
-      position: absolute;
-      display: block;
-      left: 5%;
-      top: 120%;
-      z-index: 1;
-      height: 3px;
-      width: 90%;
-      border-radius: 20px;
+      @include underline;
       transform: scaleX(1);
-      transform-origin: center;
-      transition: transform 0.15s ease-out;
-      background-color: $primary-color;
     }
     .href-contener:after {
-      content: "";
-      position: absolute;
-      display: block;
-      left: 5%;
-      top: 120%;
-      z-index: 1;
-      height: 3px;
-      width: 90%;
-      border-radius: 20px;
-      transform-origin: center;
-      transform: scaleX(0);
-      transition: transform 0.2s ease-out;
-      background-color: $primary-color;
+      @include underline;
     }
     .href-contener:hover::after {
       transform: scaleX(1);
@@ -101,6 +94,12 @@ nav {
       }
       .selected::after {
         top: 105%;
+      }
+      .href-contener:after {
+        display: none;
+      }
+      .href-contener:after:hover {
+        display: none;
       }
       i {
         display: block;

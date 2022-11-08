@@ -58,10 +58,11 @@ nav .nav-buttons .selected::after {
   height: 3px;
   width: 90%;
   border-radius: 20px;
-  transform: scaleX(1);
   transform-origin: center;
-  transition: transform 0.15s ease-out;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-out;
   background-color: rgb(227, 0, 22);
+  transform: scaleX(1);
 }
 nav .nav-buttons .href-contener:after {
   content: "";
@@ -119,6 +120,12 @@ nav .background {
   }
   nav .nav-buttons .selected::after {
     top: 105%;
+  }
+  nav .nav-buttons .href-contener:after {
+    display: none;
+  }
+  nav .nav-buttons .href-contener:after:hover {
+    display: none;
   }
   nav .nav-buttons i {
     display: block;
