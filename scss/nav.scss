@@ -1,0 +1,127 @@
+nav {
+  font-size: 2rem;
+  color: $primary-color;
+  height: 9rem;
+  z-index: 20;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding: 1rem;
+  justify-content: flex-end;
+  .nav-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: fit-content;
+    a {
+      padding-left: 0.6rem;
+      padding-right: 0.6rem;
+      color: inherit;
+      text-transform: uppercase;
+      font-weight: bold;
+      //   text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+      text-decoration: none;
+    }
+    .href-contener {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      width: fit-content;
+    }
+    .selected::after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 5%;
+      top: 120%;
+      z-index: 1;
+      height: 3px;
+      width: 90%;
+      border-radius: 20px;
+      transform: scaleX(1);
+      transform-origin: center;
+      transition: transform 0.15s ease-out;
+      background-color: $primary-color;
+    }
+    .href-contener:after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 5%;
+      top: 120%;
+      z-index: 1;
+      height: 3px;
+      width: 90%;
+      border-radius: 20px;
+      transform-origin: center;
+      transform: scaleX(0);
+      transition: transform 0.2s ease-out;
+      background-color: $primary-color;
+    }
+    .href-contener:hover::after {
+      transform: scaleX(1);
+    }
+    i {
+      display: none;
+    }
+  }
+  img {
+    position: absolute;
+    height: 50px;
+    left: 0;
+    top: 0;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+  .background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+  }
+}
+@media (max-width: 992px) {
+  nav {
+    justify-content: center;
+    height: auto;
+    .nav-buttons {
+      margin-top: 6.5rem;
+      margin-bottom: 1rem;
+      flex-direction: column;
+      a {
+        padding-top: 15px;
+        display: block;
+      }
+      .selected::after {
+        top: 105%;
+      }
+      i {
+        display: block;
+        position: absolute;
+        right: 5rem;
+        top: 3rem;
+        font-size: 3.5rem;
+      }
+    }
+    .mob-hidden {
+      a {
+        display: none;
+      }
+    }
+  }
+}
+@media (min-width: 1400px) {
+  nav {
+    padding-right: 10vw;
+    img {
+      padding-left: 10vw;
+    }
+  }
+}
