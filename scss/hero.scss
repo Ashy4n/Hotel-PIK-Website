@@ -1,0 +1,69 @@
+.hero {
+  height: 50vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .hero-shadow {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+  }
+  .hero-top {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .hero-1 {
+    position: absolute;
+    background-image: url(../img/Hero/1.JPG);
+    animation: hero-animation 20s linear 0s infinite;
+    z-index: -2;
+  }
+  .hero-2 {
+    position: absolute;
+    background-image: url(../img/Hero/2.JPG);
+    animation: hero-animation 20s linear 5s infinite;
+    z-index: -3;
+  }
+  .hero-3 {
+    position: absolute;
+    background-image: url(../img/Hero/3.JPG);
+    animation: hero-animation 20s linear 10s infinite;
+    z-index: -4;
+  }
+  .hero-4 {
+    position: absolute;
+    background-image: url(../img/Hero/4.JPG);
+    animation: hero-animation 20s linear 15s infinite;
+    z-index: -5;
+  }
+  img {
+    z-index: 5;
+  }
+}
+
+@keyframes hero-animation {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
