@@ -174,26 +174,50 @@ nav .background {
 .hero .hero-1 {
   position: absolute;
   background-image: url(../img/Hero/1.JPG);
-  animation: hero-animation 20s linear 0s infinite;
+  animation: hero-animation 30s linear 0s infinite;
   z-index: -2;
 }
 .hero .hero-2 {
   position: absolute;
   background-image: url(../img/Hero/2.JPG);
-  animation: hero-animation 20s linear 5s infinite;
+  animation: hero-animation 30s linear 3.75s infinite;
   z-index: -3;
 }
 .hero .hero-3 {
   position: absolute;
   background-image: url(../img/Hero/3.JPG);
-  animation: hero-animation 20s linear 10s infinite;
+  animation: hero-animation 30s linear 7.5s infinite;
   z-index: -4;
 }
 .hero .hero-4 {
   position: absolute;
   background-image: url(../img/Hero/4.JPG);
-  animation: hero-animation 20s linear 15s infinite;
+  animation: hero-animation 30s linear 11.25s infinite;
   z-index: -5;
+}
+.hero .hero-5 {
+  position: absolute;
+  background-image: url(../img/Hero/5.JPG);
+  animation: hero-animation 30s linear 15s infinite;
+  z-index: -6;
+}
+.hero .hero-6 {
+  position: absolute;
+  background-image: url(../img/Hero/6.JPG);
+  animation: hero-animation 30s linear 18.75s infinite;
+  z-index: -7;
+}
+.hero .hero-7 {
+  position: absolute;
+  background-image: url(../img/Hero/7.JPG);
+  animation: hero-animation 30s linear 22.5s infinite;
+  z-index: -8;
+}
+.hero .hero-8 {
+  position: absolute;
+  background-image: url(../img/Hero/8.JPG);
+  animation: hero-animation 30s linear 26.25s infinite;
+  z-index: -9;
 }
 .hero img {
   z-index: 5;
@@ -203,13 +227,13 @@ nav .background {
   0% {
     opacity: 1;
   }
-  20% {
+  12% {
     opacity: 1;
   }
-  25% {
+  14% {
     opacity: 0;
   }
-  95% {
+  98% {
     opacity: 0;
   }
   100% {
