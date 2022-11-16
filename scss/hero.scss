@@ -1,17 +1,9 @@
 .hero {
-  height: 50vh;
+  height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  .hero-shadow {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    position: absolute;
-  }
   .hero-top {
     background-position: center;
     background-size: cover;
@@ -20,6 +12,36 @@
     top: 0;
     left: 0;
     z-index: -1;
+  }
+  .hero-content {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button {
+      margin-top: 20px;
+      border-radius: 10px;
+      width: auto;
+      padding: 15px;
+      background-color: transparent;
+      border: 4px solid $primary-color;
+      font-size: 3.5rem;
+      color: white;
+      text-transform: uppercase;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        background-color: rgba(227, 0, 22, 0.6);
+      }
+    }
+  }
+
+  .hero-shadow {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
   }
   .hero-1 {
     position: absolute;
