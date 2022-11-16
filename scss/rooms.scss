@@ -1,0 +1,26 @@
+#rooms {
+  display: flex;
+  width: 90vw;
+  margin: 0 auto;
+  h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: $dark-red;
+    margin-bottom: 20px;
+  }
+  .room-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    width: 95%;
+    box-shadow: 5px 5px 20px 3px rgba($color: #000000, $alpha: 0.5);
+  }
+}
+@media (max-width: 992px) {
+  #rooms {
+    flex-direction: column;
+  }
+}

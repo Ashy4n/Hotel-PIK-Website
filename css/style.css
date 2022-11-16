@@ -6,7 +6,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Heebo", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -264,29 +264,61 @@ nav .background {
 .info {
   font-size: 2rem;
   margin: 50px;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
   display: flex;
+  align-items: center;
+  text-align: center;
+}
+.info .info-img-container {
+  height: 350px;
 }
 .info .info-img-container img {
   position: relative;
-  height: 400px;
-  z-index: 1;
+  height: 350px;
+  z-index: 10;
   box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.5);
 }
 .info .info-img-container .img-box {
-  position: relative;
-  background-color: rgb(227, 0, 22);
+  background-color: #550500;
   height: 100%;
   width: 100%;
-  transform: translate(-3%, -103%);
+  transform: translate(-3%, -105%);
 }
 .info .info-text {
   margin-left: 30px;
   color: #666666;
 }
 .info .info-text h1 {
-  color: rgb(227, 0, 22);
+  color: #550500;
+}
+
+#rooms {
+  display: flex;
+  width: 90vw;
+  margin: 0 auto;
+}
+#rooms h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #550500;
+  margin-bottom: 20px;
+}
+#rooms .room-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#rooms img {
+  width: 95%;
+  box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 992px) {
+  #rooms {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
