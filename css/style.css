@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: lightblue;
+  background-color: #f8f9fa;
   height: 300vh;
 }
 
@@ -177,7 +177,7 @@ nav .background {
   background-color: transparent;
   border: 4px solid rgb(227, 0, 22);
   font-size: 3.5rem;
-  color: white;
+  color: #f8f9fa;
   text-transform: uppercase;
   transition: 0.2s ease-in-out;
 }
@@ -260,6 +260,33 @@ nav .background {
   100% {
     opacity: 1;
   }
+}
+.info {
+  font-size: 2rem;
+  margin: 50px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: flex;
+}
+.info .info-img-container img {
+  position: relative;
+  height: 400px;
+  z-index: 1;
+  box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.5);
+}
+.info .info-img-container .img-box {
+  position: relative;
+  background-color: rgb(227, 0, 22);
+  height: 100%;
+  width: 100%;
+  transform: translate(-3%, -103%);
+}
+.info .info-text {
+  margin-left: 30px;
+  color: #666666;
+}
+.info .info-text h1 {
+  color: rgb(227, 0, 22);
 }
 
 /*# sourceMappingURL=style.css.map */

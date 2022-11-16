@@ -1,6 +1,7 @@
 // Colors
 $primary-color: rgb(227, 0, 22);
-$secondary-color: rgb(60, 60, 60); // Fonts
+$secondary-color: #666666;
+$light: #f8f9fa;
 // Reset
 * {
   padding: 0;
@@ -15,9 +16,10 @@ html {
 
 // Body tmp
 body {
-  background-color: lightblue;
+  background-color: $light;
   height: 300vh;
 }
 
 @import "./nav.scss";
 @import "./hero.scss";
+@import "./info.scss";
