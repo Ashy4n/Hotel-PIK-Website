@@ -19,7 +19,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 40px;
+  margin: 40px 0;
 }
 .flower img {
   height: 80px;
@@ -346,6 +346,57 @@ nav .background {
   100% {
     opacity: 1;
   }
+}
+.qt-background {
+  background: url(../img/Rooms/hero.jpg) no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+}
+
+.qt-background p {
+  font-size: 7rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 44px;
+  color: rgb(227, 0, 22);
+  font-family: "Arbutus Slab", serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.qt-background span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.qt-background {
+  background: url(../img/Rooms/hero.jpg) no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+}
+
+.qt-background p {
+  font-size: 7rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 44px;
+  color: rgb(227, 0, 22);
+  font-family: "Arbutus Slab", serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.qt-background span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
