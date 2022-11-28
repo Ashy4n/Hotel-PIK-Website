@@ -22,6 +22,17 @@ body {
   height: 300vh;
 }
 
+// flower separator
+.flower {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  img {
+    height: 80px;
+  }
+}
+
 @import "./nav.scss";
 @import "./hero.scss";
 @import "./info.scss";

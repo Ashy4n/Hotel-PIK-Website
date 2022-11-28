@@ -24,3 +24,21 @@
     flex-direction: column;
   }
 }
+
+@keyframes room-animation {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  96% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
