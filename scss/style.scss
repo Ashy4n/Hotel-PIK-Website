@@ -1,5 +1,6 @@
-// Fonts
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap");
+// Fonts Import Roboto & Noto Serif & Heebo
+
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Noto+Serif:wght@700&family=Roboto:wght@400;700&display=swap");
 
 // Colors
 $primary-color: rgb(227, 0, 22);
@@ -19,24 +20,14 @@ html {
   scroll-behavior: smooth;
 }
 
-// Body tmp
 body {
   background-color: $light;
   height: 300vh;
-}
-
-// flower separator
-.flower {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 40px 0;
-  img {
-    height: 80px;
-  }
 }
 
 @import "./nav.scss";
 @import "./hero.scss";
 @import "./info.scss";
 @import "./rooms.scss";
+@import "./utils.scss";
+@import "./priceList.scss";
