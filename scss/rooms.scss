@@ -1,4 +1,4 @@
-#rooms {
+#rooms .rooms {
   display: flex;
   width: 90vw;
   margin: 0 auto;
@@ -51,11 +51,12 @@
           width: 50%;
           border: none;
           border-radius: 10px;
+          color: $dark-red;
         }
       }
 
       &:hover {
-        opacity: 0.7;
+        opacity: 0.9;
       }
     }
   }
@@ -71,7 +72,7 @@
 }
 
 @media (max-width: 992px) {
-  #rooms {
+  #rooms .rooms {
     flex-direction: column;
     .room {
       height: 350px;
@@ -97,15 +98,16 @@
   }
 }
 
-.qt-background {
-  background: url(../img/Rooms/hero.jpg) no-repeat;
+@mixin banner-container {
   background-size: cover;
   padding: 150px 0;
   background-attachment: fixed;
   background-position: center center;
   position: relative;
+  border-top: 3px $dark-red solid;
+  border-bottom: 3px $dark-red solid;
 }
-.qt-background p {
+@mixin banner-p {
   font-size: 7rem;
   text-transform: uppercase;
   line-height: 44px;
@@ -113,4 +115,12 @@
   text-align: center;
   font-family: "Noto Serif", serif;
   font-weight: 700;
+}
+
+.qt-background-rooms {
+  background: url(../img/Rooms/hero.jpg) no-repeat;
+  @include banner-container();
+}
+.qt-background-rooms p {
+  @include banner-p();
 }

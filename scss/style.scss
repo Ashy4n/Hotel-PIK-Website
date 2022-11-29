@@ -22,7 +22,7 @@ html {
 
 body {
   background-color: $light;
-  height: 300vh;
+  height: 500vh;
 }
 
 @import "./nav.scss";
@@ -31,3 +31,4 @@ body {
 @import "./rooms.scss";
 @import "./utils.scss";
 @import "./priceList.scss";
+@import "./restaurant.scss";

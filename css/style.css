@@ -13,7 +13,7 @@ html {
 
 body {
   background-color: #f8f9fa;
-  height: 300vh;
+  height: 500vh;
 }
 
 nav {
@@ -154,6 +154,7 @@ nav .background {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 3px #550500 solid;
 }
 .hero .hero-top {
   background-position: center;
@@ -311,25 +312,25 @@ nav .background {
     height: 250px;
   }
 }
-#rooms {
+#rooms .rooms {
   display: flex;
   width: 90vw;
   margin: 0 auto;
 }
-#rooms h1 {
+#rooms .rooms h1 {
   font-size: 2.5rem;
   text-transform: uppercase;
   color: #550500;
   margin-bottom: 20px;
 }
-#rooms .room-container {
+#rooms .rooms .room-container {
   margin-top: 40px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#rooms .room {
+#rooms .rooms .room {
   position: relative;
   background-position: center;
   background-size: cover;
@@ -337,7 +338,7 @@ nav .background {
   width: 95%;
   box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.5);
 }
-#rooms .room .room-info {
+#rooms .rooms .room .room-info {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -349,17 +350,17 @@ nav .background {
   align-items: center;
   justify-content: center;
 }
-#rooms .room .room-info h1 {
+#rooms .rooms .room .room-info h1 {
   color: #f8f9fa;
 }
-#rooms .room .room-info div {
+#rooms .rooms .room .room-info div {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 50%;
   align-items: center;
 }
-#rooms .room .room-info div button {
+#rooms .rooms .room .room-info div button {
   margin: 0 auto;
   margin: 10px;
   font-size: 2rem;
@@ -368,25 +369,26 @@ nav .background {
   width: 50%;
   border: none;
   border-radius: 10px;
+  color: #550500;
 }
-#rooms .room .room-info:hover {
-  opacity: 0.7;
+#rooms .rooms .room .room-info:hover {
+  opacity: 0.9;
 }
-#rooms .room1 {
+#rooms .rooms .room1 {
   background-image: url(../img/Rooms/1P_1.jpg);
 }
-#rooms .room2 {
+#rooms .rooms .room2 {
   background-image: url(../img/Rooms/2P_1.jpg);
 }
-#rooms .room3 {
+#rooms .rooms .room3 {
   background-image: url(../img/Rooms//LUX_1.jpg);
 }
 
 @media (max-width: 992px) {
-  #rooms {
+  #rooms .rooms {
     flex-direction: column;
   }
-  #rooms .room {
+  #rooms .rooms .room {
     height: 350px;
   }
 }
@@ -407,16 +409,18 @@ nav .background {
     opacity: 1;
   }
 }
-.qt-background {
+.qt-background-rooms {
   background: url(../img/Rooms/hero.jpg) no-repeat;
   background-size: cover;
   padding: 150px 0;
   background-attachment: fixed;
   background-position: center center;
   position: relative;
+  border-top: 3px #550500 solid;
+  border-bottom: 3px #550500 solid;
 }
 
-.qt-background p {
+.qt-background-rooms p {
   font-size: 7rem;
   text-transform: uppercase;
   line-height: 44px;
@@ -504,6 +508,26 @@ nav .background {
   #price-list .price-container {
     font-size: 1.5rem;
   }
+}
+.qt-background-restaurant {
+  background: url(../img/Restaurant/restaurant-hero.jpg) no-repeat;
+  background-size: cover;
+  padding: 150px 0;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+  border-top: 3px #550500 solid;
+  border-bottom: 3px #550500 solid;
+}
+
+.qt-background-restaurant p {
+  font-size: 7rem;
+  text-transform: uppercase;
+  line-height: 44px;
+  color: rgb(227, 0, 22);
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

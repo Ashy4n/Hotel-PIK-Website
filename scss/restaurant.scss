@@ -1,0 +1,8 @@
+// Mixin in rooms.scss file !
+.qt-background-restaurant {
+  background: url(../img/Restaurant/restaurant-hero.jpg) no-repeat;
+  @include banner-container();
+}
+.qt-background-restaurant p {
+  @include banner-p;
+}
