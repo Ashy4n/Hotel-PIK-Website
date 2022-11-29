@@ -1,3 +1,6 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap");
+
 // Colors
 $primary-color: rgb(227, 0, 22);
 $secondary-color: #666666;
@@ -37,28 +40,3 @@ body {
 @import "./hero.scss";
 @import "./info.scss";
 @import "./rooms.scss";
-
-.qt-background {
-  background: url(../img/Rooms/hero.jpg) no-repeat;
-  background-size: cover;
-  padding: 100px 0;
-  background-attachment: fixed;
-  background-position: center center;
-  position: relative;
-}
-.qt-background p {
-  font-size: 7rem;
-  text-transform: uppercase;
-  font-weight: 300;
-  line-height: 44px;
-  color: $primary-color;
-  font-family: "Arbutus Slab", serif;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.qt-background span {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 500;
-}

@@ -9,19 +9,60 @@
     margin-bottom: 20px;
   }
   .room-container {
+    margin-top: 40px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  img {
+  .room {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: 22vw;
     width: 95%;
     box-shadow: 5px 5px 20px 3px rgba($color: #000000, $alpha: 0.5);
+    .room-info {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-color: $dark-red;
+      opacity: 0;
+      transition: 0.5s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        color: $light;
+      }
+      button {
+        height: 15%;
+        margin: auto;
+        width: 40%;
+      }
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  .room1 {
+    background-image: url(../img/Rooms/1P_1.jpg);
+  }
+  .room2 {
+    background-image: url(../img/Rooms/2P_1.jpg);
+  }
+  .room3 {
+    background-image: url(../img/Rooms//LUX_1.jpg);
   }
 }
+
 @media (max-width: 992px) {
   #rooms {
     flex-direction: column;
+    .room {
+      height: 350px;
+    }
   }
 }
 
@@ -46,7 +87,7 @@
 .qt-background {
   background: url(../img/Rooms/hero.jpg) no-repeat;
   background-size: cover;
-  padding: 100px 0;
+  padding: 150px 0;
   background-attachment: fixed;
   background-position: center center;
   position: relative;
@@ -54,16 +95,9 @@
 .qt-background p {
   font-size: 7rem;
   text-transform: uppercase;
-  font-weight: 300;
   line-height: 44px;
   color: $primary-color;
-  font-family: "Arbutus Slab", serif;
-  margin-bottom: 20px;
   text-align: center;
-}
-
-.qt-background span {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 500;
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
 }
